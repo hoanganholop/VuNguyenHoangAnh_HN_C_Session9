@@ -35,7 +35,7 @@ int main() {
         }
 
         switch (choice) {
-            case 1: {
+            case 1: 
                 printf("Nhap so luong phan tu: ");
                 scanf("%d", &length);
                 for (int i = 0; i < length; i++) {
@@ -43,16 +43,16 @@ int main() {
                     scanf("%d", &arr[i]);
                 }
                 break;
-            }
-            case 2: {
+            
+            case 2: 
                 printf("Mang: ");
                 for (int i = 0; i < length; i++) {
                     printf("%d ", arr[i]);
                 }
                 printf("\n");
                 break;
-            }
-            case 3: {
+            
+            case 3: 
                 int sum = 0;
                 printf("Cac phan tu chan: ");
                 for (int i = 0; i < length; i++) {
@@ -63,8 +63,8 @@ int main() {
                 }
                 printf("\nTong cac phan tu chan: %d\n", sum);
                 break;
-            }
-            case 4: {
+            
+            case 4: 
                 if (length == 0) {
                     printf("Mang rong.\n");
                     break;
@@ -82,8 +82,8 @@ int main() {
                 printf("Gia tri lon nhat: %d\n", max);
                 printf("Gia tri nho nhat: %d\n", min);
                 break;
-            }
-            case 5: {
+        
+            case 5: 
                 int sum = 0;
                 printf("Cac phan tu la so nguyen to: ");
                 for (int i = 0; i < length; i++) {
@@ -94,8 +94,8 @@ int main() {
                 }
                 printf("\nTong cac phan tu la so nguyen to: %d\n", sum);
                 break;
-            }
-            case 6: {
+            
+            case 6: 
                 int number, count = 0;
                 printf("Nhap vao mot so: ");
                 scanf("%d", &number);
@@ -106,8 +106,8 @@ int main() {
                 }
                 printf("So luong phan tu co gia tri %d trong mang: %d\n", number, count);
                 break;
-            }
-            case 7: {
+            
+            case 7: 
                 if (length >= 100) {
                     printf("Mang da day. Khong the them phan tu.\n");
                     break;
@@ -127,7 +127,7 @@ int main() {
                 arr[position] = value;
                 length++;
                 break;
-            }
+            
             default:
                 printf("Lua chon khong hop le. Vui long chon lai.\n");
         }
