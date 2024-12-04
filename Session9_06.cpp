@@ -25,7 +25,7 @@ int main() {
         }
 
         switch (choice) {
-            case 1: {
+            case 1: 
                 printf("Nhap so dong: ");
                 scanf("%d", &rows);
                 printf("Nhap so cot: ");
@@ -37,8 +37,8 @@ int main() {
                     }
                 }
                 break;
-            }
-            case 2: {
+            
+            case 2: 
                 printf("Gia tri cua mang theo ma tran:\n");
                 for (int i = 0; i < rows; i++) {
                     for (int j = 0; j < cols; j++) {
@@ -47,8 +47,8 @@ int main() {
                     printf("\n");
                 }
                 break;
-            }
-            case 3: {
+            
+            case 3: 
                 int sum = 0;
                 printf("Cac phan tu la le: ");
                 for (int i = 0; i < rows; i++) {
@@ -61,8 +61,8 @@ int main() {
                 }
                 printf("\nTong cac phan tu le: %d\n", sum);
                 break;
-            }
-            case 4: {
+            
+            case 4: 
                 int product = 1;
                 printf("Cac phan tu nam tren duong bien: ");
                 for (int i = 0; i < rows; i++) {
@@ -75,24 +75,24 @@ int main() {
                 }
                 printf("\nTich cac phan tu tren duong bien: %d\n", product);
                 break;
-            }
-            case 5: {
+            
+            case 5: 
                 printf("Cac phan tu nam tren duong cheo chinh: ");
                 for (int i = 0; i < rows; i++) {
                     printf("%d ", arr[i][i]);
                 }
                 printf("\n");
                 break;
-            }
-            case 6: {
+            
+            case 6: 
                 printf("Cac phan tu nam tren duong cheo phu: ");
                 for (int i = 0; i < rows; i++) {
                     printf("%d ", arr[i][cols - i - 1]);
                 }
                 printf("\n");
                 break;
-            }
-            case 7: {
+            
+            case 7: 
                 int maxRow = 0, maxSum = 0;
                 for (int i = 0; i < rows; i++) {
                     int sum = 0;
@@ -106,7 +106,7 @@ int main() {
                 }
                 printf("Dong co tong gia tri cac phan tu lon nhat la dong thu %d voi tong %d\n", maxRow + 1, maxSum);
                 break;
-            }
+            
             default:
                 printf("Lua chon khong hop le. Vui long chon lai.\n");
         }
